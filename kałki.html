@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kałki </title>
+  <style>
+    /* Reset stylów */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      background: #f9f9f9;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url("IMG_20240601_182041.jpg")
+                  no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.45);
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+    }
+
+    nav {
+      background: #004d40;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc80;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #004d40;
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #004d40;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kałki</h1>
+    <p>Malownicza wieś w gminie Trzebiel, województwo lubuskie</p>
+  </header>
+
+  <nav>
+    <a href="#o-wsi">O miejscowości</a>
+    <a href="#historia">Historia</a>
+    <a href="#mapa">Mapa</a>
+    <a href="#galeria">Galeria</a>
+  </nav>
+
+  <div class="container">
+    <section id="o-wsi">
+      <h2>O miejscowości</h2>
+      <div class="cards">
+        <div class="card">
+          <p>
+            Kałki to niewielka, urokliwa wieś położona w gminie Trzebiel. 
+            Otoczona lasami i polami, stanowi idealne miejsce do odpoczynku w ciszy i spokoju. 
+            Bliskość granicy z Niemcami sprawia, że wieś ma dogodne położenie komunikacyjne.
+          </p>
+        </div>
+        <div class="card">
+          <p>
+            W miejscowości można odnaleźć ślady dawnej historii, a jednocześnie cieszyć się pięknem przyrody. 
+            Okolica sprzyja pieszym i rowerowym wycieczkom, a także turystyce przygranicznej.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="historia">
+      <h2>Historia</h2>
+      <p>
+        Pierwsze wzmianki o Kałkach sięgają czasów średniowiecza, kiedy wieś należała do lokalnych majątków ziemskich. 
+        Położenie przy szlakach handlowych sprzyjało rozwojowi osady. 
+        W XX wieku wieś znalazła się w granicach Polski i należy do województwa lubuskiego.
+
+        
+        <B>KAŁKI:Kalke </B>
+        wieś położona w gminie Trzebiel powiatu żarskiego. Wzmiankowana w 1391 roku(Kalke) oraz w 1454 roku(Kalke). Wieś wasalna majątku w Żarach. W 1381 roku należała do rodu von Kalckreuth. Kolejno należy do: von Gebelzig(1454), von Unwürde(1552), von Wüstenhain(1570), von Schӧnaich(1660), von Kracht(1706-1715- wymieniony Heinrich Sigismund von Kracht(1693-1724), Hermann(1715), von Schӧnaich(1715, 1746), von Scharlach(1788), von Witzleben(1799), von Lindenau(1805), von Zerbst(1808- wymieniony Karl Gottlob Siegmund von Zerbst, zmarły w 1812 roku), von Gorne(1810), von Oppel(1816), von Winning(1818, 1821, 1823, 1850). Na początku XX wieku jest w posiadaniu rodziny Schumann. Ostatnim właścicielem dóbr była rodzina Ungnade.
+        
+      </p>
+      <p>
+        Dziś Kałki to spokojne miejsce o wiejskim charakterze, gdzie tradycja łączy się z nowoczesnością.
+      </p>
+    </section>
+
+    <section id="mapa">
+      <h2>Mapa</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2502.395226835011!2d14.8202!3d51.666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470828d8f8a5bb7f%3A0x7cf0e22d8d98a10!2sKa%C5%82ki!5e0!3m2!1spl!2spl!4v1696355263537!5m2!1spl!2spl" 
+        allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
+
+    <section id="galeria">
+      <h2>Galeria</h2>
+      <div class="gallery">
+          <figure>
+        <img src="Kałki-1925-lubuskie.png" alt="Kałki-1925-lubuskie">
+        <figcaption><b>W centrum wsi położony był zespół dworski. Pozostałością jest zdziczały park dworski.</b></figcaption>
+          </figure>
+         
+          <figure>
+        <img src="Gutshaus kalke 1938.jpg" alt="Zdjęcie Kałki 2">
+        <figcaption><b>Dwór Kalke w 1938 r., po „rozproszeniu zabudowań” w 1932 r. Niemiecka nazwa Gutshaus Kalke 1938r, nach der"Zersiedelung" 1932r </b></figcaption>
+        </figure>
+        <figure>
+        <img src="schule.jpg" alt="szkoła ">
+        <figcaption><b>Szkoła w kałakach   </b></figcaption>
+        </figure>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Kałki - Gmina Trzebiel</p>
+    <p>Strona informacyjna</p>
+  </footer>
+</body>
+</html>
